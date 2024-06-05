@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagprincipal.css">
+  <link rel="stylesheet" href="designRegistro.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="store-icon">
+                    <img src="images/Iconloja.png" alt="Ícone de Loja">
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar...">
+                    <div class="search-circle">
+                        <img src="images/pesquisa.png" alt="Ícone de Pesquisa">
+                    </div>
+                </div>
+                <a href="#" class="LoginIcon">
+                    <img src="images/UserLogin.png" alt="Ícone de Login" onclick="openModal('LoginModal')">
+                  </a>
+                  <h4> Login e Cadastro </h4>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Anunciar</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li class="contact-icon"><a href="#"><div class="circle">
+                        <img src="images/icon.png" alt="Ícone de Contato">
+                    </div></a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <!-- Modal do Login (para fins de localização)-->
+    <div id="LoginModal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('LoginModal')">&times;</span>
+        <h2> Login </h2>
+        <input type="text" placeholder="E-mail">
+        <br>
+        <br>
+        <br><input type="text" placeholder="Senha">
+        <button class="LoginButton">Logar</button> 
+        </div>
+    </div>
+
+  <main>
+    <form>
+      <div class="input-group">
+        <input type="text" id="nome" name="nome" required>
+        <label for="nome">NOME</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="sobrenome" name="sobrenome" required>
+        <label for="sobrenome">SOBRENOME</label>
+      </div>
+      <div class="input-group">
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+        
+      </div>
+      <div class="input-group">
+        <input type="text" id="cpf" name="cpf" required>
+        <label for="cpf">CPF</label>
+      </div>
+      <div class="input-group">
+        <input type="tel" id="celular" name="celular" required>
+        <label for="celular">CELULAR</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">E-MAIL</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="confirmarEmail" name="confirmarEmail" required>
+        <label for="confirmarEmail">DIGITE NOVAMENTE O E-MAIL</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="senha" name="senha" required>
+        <label for="senha">SENHA</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+        <label for="confirmarSenha">DIGITE NOVAMENTE A SENHA</label>
+      </div>
+      <div class="input-group button-group">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </main>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <div class="container">
+        <p>&copy; O carlinhos é o cara que mais tem lojas no mundo</p>
+    </div>
+</footer>
+
+<script src="principal.js"></script>
+</body>
+</html>

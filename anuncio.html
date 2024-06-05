@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-WoF+P0F4G9g5zOv85fAm6K7TMf+XTl6WEs62EZUm7VhqQhdgDOb3Pq71zks1k0tQ" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="anuncio.css">
+        <link rel="stylesheet" href="designRegistro.css">
+        <script src="https://kit.fontawesome.com/b695435dc1.js" crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/heroicons.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="home.html" class="store-icon">
+                        <img src="images/Iconloja.png" alt="Ícone de Loja">
+                    </a>
+                    <div class="search-container">
+                        <input type="text" placeholder="Pesquisar...">
+                        <div class="search-circle">
+                            <img src="images/pesquisa.png" alt="Ícone de Pesquisa">
+                        </div>
+                    </div>
+                    <a href="#" class="LoginIcon">
+                        <img src="images/UserLogin.png" alt="Ícone de Login" onclick="openModal('LoginModal')">
+                      </a>
+                      <h4> Login e Cadastro </h4>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Explorar</a></li>
+                        <li><a href="#">Anunciar</a></li>
+                        <li><a href="#">Histórico</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li class="contact-icon"><a href="#"><div class="circle">
+                            <img src="images/icon.png" alt="Ícone de Contato">
+                        </div></a></li>
+                    </ul>
+                </nav>            
+            </div>
+        </header>
+\    
+
+        <main class="h-screen">
+            <div class="bloco">
+                <div class="titulo2">
+                    <h1 class="inserir">Inserir anúncio</h1>
+                </div>
+                <div class="supertest">
+                    <h2 class="direitatext2">Roupas</h2>
+                    <h2 class="direitatext">Veículos</h2>
+                </div>
+                    <div class="botaodiv">
+                        <img src="/images/roupas-masculinas (1).png" class="botao button-default" onclick="mostrarModal()">
+                        <img src="/images/carro (1).png" class="botao button-default" onclick="mostrarModal2()">
+                    </div>
+                    <div class="supertest">
+                        <h2 class="direitatext2">Imóveis</h2>
+                        <h2 class="direitatext">Serviços</h2>
+                    </div>
+                    <div class="botaodiv">
+                        <img src="/images/habitacao (1).png" class="botao button-default" onclick="mostrarModal3()">
+                        <img src="/images/suporte-tecnico (1).png" class="botao button-default" onclick="mostrarModal4()">
+                    </div>
+                <div id="modalCadastro" class="fixed inset-0 overflow-y-auto z-50 fade-in hidden">
+                    <div class="flex items-center justify-center min-h-screen">
+                        <div class="fixed inset-0 bg-gray opacity-100">
+                            <section class="principalbody">
+                                <div class="scroll marginblocofluante bg-white p-5 rounded-lg shadow-xl relative w-full md:w-1/2">
+                                    <div class="container2 border-b border-gray-300">
+                                        <h1 class="inserir">Inserir anúncio</h1>
+                                        <img src="/images/x.png" class="x" onclick="fecharModal()">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-2 fade-in">
+                                        <div class="flex flex-col my-4">
+                                            <label>Titulo da venda</label>
+                                            <input type="text" class="texty bg-white py-4 px-4 rounded-md border border-[#CA0032]
+                                            focus:outline-none focus:border-[#CA0032] text-gray-500" placeholder="Digite o titulo" required>   
+                                        </div>    
+                                        <div class="flex flex-col my-4">
+                                            <label>Nome do produto</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            " placeholder="Digite o nome" required>   
+                                        </div>   
+                                        <div class="flex flex-col my-4">
+                                            <label>Novo/Usado</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Novo">Novo</option>
+                                            <option value="Usado">Usado</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Tipo</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Camiseta">Camisetas</option>
+                                            <option value="Blusa">Blusas</option>
+                                            <option value="Short">Shorts</option>
+                                            <option value="Calça">Calças</option>
+                                            <option value="Tênis">Calçados</option>
+                                            <option value="Relógio">Acessórios</option>
+                                            <option value="Boné">Bonés</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Preço (R$)</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border
+                                            " placeholder="Digite o preço" required>   
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Quantidade</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            focus:border-[#CA0032] text-gray-500" placeholder="Digite o nome" required>   
+                                        </div> 
+                                         <div class="flex flex-col my-4">
+                                            <label>Descrição do produto</label>
+                                            <textarea class="textarea"></textarea>  
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Imagem do produto</label>
+                                            <img src="/images/camera.png" alt="Selecione uma imagem" id="imgPhoto" onclick="openFileInput()">
+                                            <input type="file" id="flImage" name="fImage" accept="image/*"  multiple onchange="updateImage(event)"/>
+                                        </div>
+                                        <div>
+                                            <button class="anunciar" onclick="mostrarAlerta()">Anunciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalCadastro2" class="fixed inset-0 overflow-y-auto z-50 fade-in hidden">
+                    <div class="flex items-center justify-center min-h-screen">
+                        <div class="fixed inset-0 bg-gray opacity-100">
+                            <section class="principalbody">
+                                <div class="scroll marginblocofluante bg-white p-5 rounded-lg shadow-xl relative w-full md:w-1/2">
+                                    <div class="container2 border-b border-gray-300">
+                                        <h1 class="inserir">Inserir anúncio</h1>
+                                        <img src="/images/x.png" class="x" onclick="fecharModal2()">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-2 fade-in">
+                                        <div class="flex flex-col my-4">
+                                            <label>Titulo da venda</label>
+                                            <input type="text" class="texty bg-white py-4 px-4 rounded-md border border-[#CA0032]
+                                            focus:outline-none focus:border-[#CA0032] text-gray-500" placeholder="Digite o titulo" required>   
+                                        </div>    
+                                        <div class="flex flex-col my-4">
+                                            <label>Nome do veiculo</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            " placeholder="Digite o nome" required>   
+                                        </div>   
+                                        <div class="flex flex-col my-4">
+                                            <label>Média Km</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="20Km">0Km - 20Km</option>
+                                            <option value="40Km">20Km - 40Km</option>
+                                            <option value="80Km">40Km - 60Km</option>
+                                            <option value="100Km">60Km - 80Km</option>
+                                            <option value="100Km">80Km - 100Km</option>
+                                            <option value="100Km">100Km +</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Tipo</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Camiseta">Sedan</option>
+                                            <option value="Blusa">SUV</option>
+                                            <option value="Short">Conversível</option>
+                                            <option value="Calça">Pick-up</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Transmissão</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Camiseta">Manual</option>
+                                            <option value="Blusa">Automatico</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Combustível</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Camiseta">Gasolina</option>
+                                            <option value="Blusa">Álcool</option>
+                                            <option value="Blusa">Diesel</option>
+                                            <option value="Blusa">Eletricidade</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Preço (R$)</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border
+                                            " placeholder="Digite o preço" required>   
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Ano</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            focus:border-[#CA0032] text-gray-500" placeholder="Digite o nome" required>   
+                                        </div> 
+                                         <div class="flex flex-col my-4">
+                                            <label>Descrição do produto</label>
+                                            <textarea class="textarea"></textarea>  
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Imagem do produto</label>
+                                            <img src="/images/camera.png" alt="Selecione uma imagem" id="imgPhoto2" onclick="openFileInput2()">
+                                            <input type="file" id="flImage2" name="fImage" accept="image/*"  multiple onchange="updateImage2(event)"/>
+                                        </div>
+                                        <div>
+                                            <button class="anunciar" onclick="mostrarAlerta()">Anunciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalCadastro3" class="fixed inset-0 overflow-y-auto z-50 fade-in hidden">
+                    <div class="flex items-center justify-center min-h-screen">
+                        <div class="fixed inset-0 bg-gray opacity-100">
+                            <section class="principalbody">
+                                <div class="scroll marginblocofluante bg-white p-5 rounded-lg shadow-xl relative w-full md:w-1/2">
+                                    <div class="container2 border-b border-gray-300">
+                                        <h1 class="inserir">Inserir anúncio</h1>
+                                        <img src="/images/x.png" class="x" onclick="fecharModal3()">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-2 fade-in">
+                                        <div class="flex flex-col my-4">
+                                            <label>Titulo da venda</label>
+                                            <input type="text" class="texty bg-white py-4 px-4 rounded-md border border-[#CA0032]
+                                            focus:outline-none focus:border-[#CA0032] text-gray-500" placeholder="Digite o titulo" required>   
+                                        </div>    
+                                        <div class="flex flex-col my-4">
+                                            <label>Bairro</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            " placeholder="Digite o nome" required>   
+                                        </div>   
+                                        <div class="flex flex-col my-4">
+                                            <label>Aluguel/Venda</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Aluguel">Aluguel</option>
+                                            <option value="Venda">Venda</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Tipo</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Casa">Casa</option>
+                                            <option value="Casa C">Casa Condomínio</option>
+                                            <option value="Apartamento">Apartamento</option>
+                                            <option value="Apartamento C">Apartamento Condomínio</option>
+                                            <option value="Casa de campo">Casa de campo</option>
+                                            <option value="Galpão">Galpão</option>
+                                            <option value="Terreno">Terreno</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Média m²</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="20Km">20m² - 30m²</option>
+                                            <option value="40Km">30m² - 50m²</option>
+                                            <option value="80Km">50m² - 70m²</option>
+                                            <option value="100Km">70m² - 100m²</option>
+                                            <option value="100Km">100m² - 150m²</option>
+                                            <option value="100Km">200m² +</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Preço (R$)</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border
+                                            " placeholder="Digite o preço" required>   
+                                        </div> 
+                                         <div class="flex flex-col my-4">
+                                            <label>Descrição do produto</label>
+                                            <textarea class="textarea"></textarea>  
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Imagem do produto</label>
+                                            <img src="/images/camera.png" alt="Selecione uma imagem" id="imgPhoto3" onclick="openFileInput3()">
+                                            <input type="file" id="flImage3" name="fImage" accept="image/*"  multiple onchange="updateImage3(event)"/>
+                                        </div>
+                                        <div>
+                                            <button class="anunciar" onclick="mostrarAlerta()">Anunciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalCadastro4" class="fixed inset-0 overflow-y-auto z-50 fade-in hidden">
+                    <div class="flex items-center justify-center min-h-screen">
+                        <div class="fixed inset-0 bg-gray opacity-100">
+                            <section class="principalbody">
+                                <div class="scroll marginblocofluante bg-white p-5 rounded-lg shadow-xl relative w-full md:w-1/2">
+                                    <div class="container2 border-b border-gray-300">
+                                        <h1 class="inserir">Inserir anúncio</h1>
+                                        <img src="/images/x.png" class="x" onclick="fecharModal4()">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-2 fade-in">
+                                        <div class="flex flex-col my-4">
+                                            <label>Titulo da venda</label>
+                                            <input type="text" class="texty bg-white py-4 px-4 rounded-md border border-[#CA0032]
+                                            focus:outline-none focus:border-[#CA0032] text-gray-500" placeholder="Digite o titulo" required>   
+                                        </div>    
+                                        <div class="flex flex-col my-4">
+                                            <label>Nome do serviço</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            " placeholder="Digite o nome" required>   
+                                        </div>   
+                                        <div class="flex flex-col my-4">
+                                            <label>Tipos de serviço</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Reforma">Reforma</option>
+                                            <option value="Manutenção">Manutenção</option>
+                                            <option value="Fornecimento">Fornecimento</option>
+                                            <option value="Instalação">Instalação</option>
+                                            <option value="Limpeza">Limpeza</option>
+                                            <option value="Consultoria">Consultoria</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Tipos de solicitações</label>
+                                            <select name="uf" id="uf" class="bg-white py-4 px-4 rounded-md border focus:outline-none">
+                                            <option disabled selected hidden>Selecione</option>
+                                            <option value="Presencial">Presencial</option>
+                                            <option value="Periódica">Periódica</option>
+                                            <option value="Online">Online</option>
+                                          </select>
+                                        </div>
+                                        <div class="flex flex-col my-4">
+                                            <label>Preço (R$)</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border
+                                            " placeholder="Digite o preço" required>   
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Nome do produto</label>
+                                            <input type="text" class="bg-transparent py-4 px-4 rounded-md border border-[#CA0032] focus:outline-none
+                                            focus:border-[#CA0032] text-gray-500" placeholder="Digite o nome" required>   
+                                        </div> 
+                                         <div class="flex flex-col my-4">
+                                            <label>Descrição do produto</label>
+                                            <textarea class="textarea"></textarea>  
+                                        </div> 
+                                        <div class="flex flex-col my-4">
+                                            <label>Imagem do produto</label>
+                                            <img src="/images/camera.png" alt="Selecione uma imagem" id="imgPhoto4" onclick="openFileInput4()">
+                                            <input type="file" id="flImage4" name="fImage" accept="image/*"  multiple onchange="updateImage4(event)"/>
+                                        </div>
+                                        <div>
+                                            <button class="anunciar" onclick="mostrarAlerta()">Anunciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="anuncio.js"></script>
+    </body>
+ <footer>
+        <div class="containerFoot">
+            <p>&copy; O carlinhos é o cara que mais tem lojas no mundo</p>
+        </div>
+    </footer>
+</html>

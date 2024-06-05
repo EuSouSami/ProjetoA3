@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagprincipal.css">
+    <link rel="stylesheet" href="designRegistro.css">
+</head>
+<body>
+
+    <div id="LoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('LoginModal')">&times;</span>
+            <h2>Login</h2>
+            <input type="text" placeholder="E-mail" class="input-field">
+            <input type="password" placeholder="Senha" class="input-field">
+            <button class="login-button">Logar</button>
+            <a href="registro.html" class="register-link">Ou registre-se</a>
+        </div>
+    </div>
+
+</body>
+</html>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="store-icon">
+                    <img src="images/Iconloja.png" alt="Ícone de Loja">
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar...">
+                    <div class="search-circle">
+                        <img src="images/pesquisa.png" alt="Ícone de Pesquisa">
+                    </div>
+                </div>
+                <a href="#" class="LoginIcon">
+                    <img src="images/UserLogin.png" alt="Ícone de Login" onclick="openModal('LoginModal')">
+                  </a>
+                  <h4> Login e Cadastro </h4>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Anunciar</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li class="contact-icon"><a href="#"><div class="circle">
+                        <img src="images/icon.png" alt="Ícone de Contato">
+                    </div></a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-slides">
+                <div class="slide">
+                    <img src="images/banner1.png" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.png" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.png" alt="Banner 3">
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Categorias</h2>
+            <div class="category-list">
+                <div class="category">
+                    <h3>Celulares</h3>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 1">
+                            <div class="product-info">
+                                <h3>Celular 1</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 2">
+                            <div class="product-info">
+                                <h3>Celular 2</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 3">
+                            <div class="product-info">
+                                <h3>Celular 3</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 4">
+                            <div class="product-info">
+                                <h3>Celular 4</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 5">
+                            <div class="product-info">
+                                <h3>Celular 5</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <h3>Computadores</h3>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="images/computador1.png" alt="Computador 1">
+                            <div class="product-info">
+                                <h3>Computador 1</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/computador1.png" alt="Computador 2">
+                            <div class="product-info">
+                                <h3>Computador 2</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/computador1.png" alt="Computador 3">
+                            <div class="product-info">
+                                <h3>Computador 3</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/computador1.png" alt="Computador 4">
+                            <div class="product-info">
+                                <h3>Computador 4</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/computador1.png" alt="Computador 5">
+                            <div class="product-info">
+                                <h3>Computador 5</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <h3>Periféricos</h3>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="images/periferico1.png" alt="Periférico 1">
+                            <div class="product-info">
+                                <h3>Periférico 1</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/periferico1.png" alt="Periférico 2">
+                            <div class="product-info">
+                                <h3>Periférico 2</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/periferico1.png" alt="Periférico 3">
+                            <div class="product-info">
+                                <h3>Periférico 3</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/periferico1.png" alt="Periférico 4">
+                            <div class="product-info">
+                                <h3>Periférico 4</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/periferico1.png" alt="Periférico 5">
+                            <div class="product-info">
+                                <h3>Periférico 5</h3>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="highlighted-products">
+        <div class="container">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/periferico1.png" alt="Periférico 3">
+                    <div class="product-info">
+                        <h3>Periférico 6</h3>
+                        <p>Descrição</p>
+                        <div class="tags">
+                            <span class="tag novo">Novo</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/computador1.png" alt="Computador 6">
+                    <div class="product-info">
+                        <h3>Computador 6</h3>
+                        <p>Descrição</p>
+                        <div class="tags">
+                            <span class="tag novo">Novo</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/computador1.png" alt="Computador 7">
+                    <div class="product-info">
+                        <h3>Computador 7</h3>
+                        <p>Descrição</p>
+                        <div class="tags">
+                            <span class="tag novo">Novo</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/periferico1.png" alt="Periférico 3">
+                    <div class="product-info">
+                        <h3>Periférico 7</h3>
+                        <p>Descrição</p>
+                        <div class="tags">
+                            <span class="tag novo">Novo</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/celular1.png" alt="Celular 6">
+                    <div class="product-info">
+                        <h3>Celular 6</h3>
+                        <p>Descrição</p>
+                        <div class="tags">
+                            <span class="tag usado">Usado</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="changeProducts">Mostrar Mais Produtos</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Loja</p>
+        </div>
+    </footer>
+    <script src="principal.js"></script>
+</body>
+</html>

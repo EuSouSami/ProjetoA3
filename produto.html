@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+
+    <div id="LoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('LoginModal')">&times;</span>
+            <h2>Login</h2>
+            <input type="text" placeholder="E-mail" class="input-field">
+            <input type="password" placeholder="Senha" class="input-field">
+            <button class="login-button">Logar</button>
+            <a href="registro.html" class="register-link">Ou registre-se</a>
+        </div>
+    </div>
+
+</body>
+</html>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="store-icon">
+                    <img src="images/Iconloja.png" alt="Ícone de Loja">
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar...">
+                    <div class="search-circle">
+                        <img src="images/pesquisa.png" alt="Ícone de Pesquisa">
+                    </div>
+                </div>
+                <a href="#" class="LoginIcon">
+                    <img src="images/UserLogin.png" alt="Ícone de Login" onclick="openModal('LoginModal')">
+                  </a>
+                  <h4> Login e Cadastro </h4>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Anunciar</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li class="contact-icon"><a href="#"><div class="circle">
+                        <img src="images/icon.png" alt="Ícone de Contato">
+                    </div></a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <div id="LoginModal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('LoginModal')">&times;</span>
+        <h2> Login </h2>
+        <input type="text" placeholder="E-mail">
+        <br>
+        <br>
+        <br><input type="text" placeholder="Senha">
+        <button class="LoginButton">Logar</button> 
+        <a href="registro.html">Ou registre-se</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="product-content">
+                    <div class="product-gallery">
+                        <img src="images/celular1.png" alt="Celular 1" id="main-image">
+                    </div>
+                    <div class="product-info-principal">
+                        <h1>Celular 1</h1>
+                        <p class="price">R$ 1.200,00</p>
+                        <p class="payment-options">12x de R$ 100,00 sem juros</p>
+                        <button class="buy-now">Comprar agora</button>
+                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                        <h2>Descrição</h2>
+                        <p>Descrição detalhada do produto.</p>
+                        <div class="tags">
+                            <span class="tag novo">Novo</span>
+                            <span class="tag desconto">Desconto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="related-products">
+            <div class="container">
+                <h2>Produtos Relacionados</h2>
+                    <h3>Celulares</h3>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 1">
+                            <div class="product-info">
+                                <h3>Celular 1</h3>
+                                <p>R$ 1.250,00</p>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 2">
+                            <div class="product-info">
+                                <h3>Celular 2</h3>
+                                <p>R$ 700,00</p>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 3">
+                            <div class="product-info">
+                                <h3>Celular 3</h3>
+                                <p>R$ 900,00</p>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag novo">Novo</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 4">
+                            <div class="product-info">
+                                <h3>Celular 4</h3>
+                                <p>R$ 1.200,00</p>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="images/celular1.png" alt="Celular 5">
+                            <div class="product-info">
+                                <h3>Celular 5</h3>
+                                <p>R$ 400,00</p>
+                                <p>Descrição</p>
+                                <div class="tags">
+                                    <span class="tag usado">Usado</span>
+                                    <span class="tag desconto">Desconto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2>Avaliações</h2>
+                <div class="review">
+                    <h3>Eduardo fransisco</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <p>Ótimo produto! Recomendo a todos.</p>
+                </div>
+                <div class="review">
+                    <h3>Davi Jonas</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Excelente qualidade e entrega rápida.</p>
+                </div>
+                <div class="review">
+                    <h3>Carlinhos Maia</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Adorei! Superou minhas expectativas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Loja</p>
+        </div>
+    </footer>
+    <script src="produto.js"></script>
+</body>
+</html>
